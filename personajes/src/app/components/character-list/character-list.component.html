@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Catálogo de Personajes - Dragon Ball</h1>
+
+  @if (loading) {
+    <div class="state-indicator loading">Cargando guerreros Z...</div>
+  }
+
+  @if (errorMessage) {
+    <div class="state-indicator error">{{ errorMessage }}</div>
+  }
+
+  @if (!loading && !errorMessage) {
+    <div class="grid">
+      @for (char of characters; track $index) {
+        <div class="card" [class.eliminado]="char.muerto">
+          
+          @if (char.muerto) {
+            <span class="marca-x">X</span>
+          }
+
+          <img [src]="char.image" [alt]="char.name" loading="lazy" />
+          <div class="card-body">
+            <h2>{{ char.name }}</h2>
+            <p class="race-gender">{{ char.race }} - {{ char.gender }}</p>
+            <p class="label">Afiliación:</p>
+            <p class="value">{{ char.affiliation }}</p>
+<br>
+            <button 
+            class="btn-estado" 
+            [disabled]="char.muerto" 
+            (click)="matarPersonaje(char)">
+            Matar
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

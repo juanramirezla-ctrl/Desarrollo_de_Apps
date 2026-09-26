@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>ion-popover</ion-title>
+  </ion-toolbar>
+</ion-header>
+<p>A Popover is a dialog that appears on top of the current page. It can be used for anything, but generally it is used for overflow actions that don't fit in the navigation bar.
+
+There are two ways to use ion-popover: inline or via the popoverController. Each method comes with different considerations, so be sure to use the approach that best fits your use case.</p>
+<h2>Example</h2>
+<ion-content>
+<ion-button id="click-trigger">Left-Click Me</ion-button>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="context-menu-trigger">Right-Click Me</ion-button>
+<ion-popover trigger="context-menu-trigger" triggerAction="context-menu">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="hover-trigger">Hover Over Me</ion-button>
+<ion-popover trigger="hover-trigger" triggerAction="hover">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+</ion-content>

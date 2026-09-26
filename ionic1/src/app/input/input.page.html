@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>ion-input</ion-title>
+  </ion-toolbar>
+</ion-header>
+<p>The input component is a wrapper to the HTML input element with custom styling and additional functionality. It accepts most of the same properties as the HTML input and integrates with the keyboard on mobile devices.</p>
+<h2>Example</h2>
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-input label="Default input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Input with value" value="121 S Pinckney St #300"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Readonly input" value="Madison" [readonly]="true"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Disabled input" value="53703" [disabled]="true"></ion-input>
+  </ion-item>
+</ion-list>
+</ion-content>

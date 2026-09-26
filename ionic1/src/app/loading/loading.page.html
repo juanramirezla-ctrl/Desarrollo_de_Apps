@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>ion-loading</ion-title>
+  </ion-toolbar>
+</ion-header>
+<p>An overlay that can be used to indicate activity while blocking user interaction. The loading indicator appears on top of the app's content, and can be dismissed by the app to resume user interaction with the app. It includes an optional backdrop, which can be disabled by setting showBackdrop: false upon creation.</p>
+<h2>Example</h2>
+<ion-content>
+<ion-button id="open-loading">Show Loading</ion-button>
+<ion-loading trigger="open-loading" message="Dismissing after 3 seconds..." duration="3000"></ion-loading>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ion-select</ion-title>
+  </ion-toolbar>
+</ion-header>
+<p>Selects are form controls to select an option, or options, from a set of options. When a user taps the select, a dialog appears with all of the options in a large, easy to select list.
+
+A select should be used with child < ion-select-option > elements. If the child option is not given a value attribute then its text will be used as the value.
+
+If value is set on the < ion-select>, the selected option will be chosen based on that value.</p>
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-select label="Default label" placeholder="Favorite Fruit">
+      <ion-select-option value="apple">Apple</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Orange</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Fixed label" label-placement="fixed" placeholder="Favorite fruit">
+      <ion-select-option value="apple">Apple</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Orange</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Stacked label" label-placement="stacked">
+      <ion-select-option value="apple">Apple</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Orange</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Floating label" label-placement="floating">
+      <ion-select-option value="apple">Apple</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Orange</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-content>

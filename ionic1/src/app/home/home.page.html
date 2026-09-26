@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Lista de Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <ion-item *ngFor="let item of componentes; let i = index" [routerLink]="item.ruta" button detail="true">
+      <ion-label>
+        {{ i + 1 }}. {{ item.nombre }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

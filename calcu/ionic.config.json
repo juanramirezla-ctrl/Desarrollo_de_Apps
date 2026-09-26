@@ -1,0 +1,7 @@
+{
+  "name": "calcu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
